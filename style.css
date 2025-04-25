@@ -1,40 +1,136 @@
-
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #000;
-  color: white;
+  font-family: 'Urbanist', sans-serif;
+  background: linear-gradient(to bottom, #0e0e0e, #1a1a1a);
+  color: #fff;
 }
+
 header {
-  background-color: #000;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 5rem 2rem;
+  background: linear-gradient(145deg, #000000, #2d005f);
 }
-header img {
-  max-width: 200px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-section {
+header h1 span {
+  color: #9a5bff;
+}
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: #9a5bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #7a42d1;
+}
+
+.benefits {
   padding: 4rem 2rem;
-  border-bottom: 1px solid #5b00d3;
-}
-h1, h2 {
-  color: #a94eff;
   text-align: center;
 }
-p {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  text-align: center;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
-.footer {
+.card {
+  background-color: #222;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+#contacto {
+  padding: 4rem 2rem;
+  text-align: center;
   background-color: #111;
+}
+footer {
+  background-color: #0e0e0e;
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
   color: #aaa;
 }
-.footer a {
-  color: #a94eff;
+
+.whatsapp-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50px;
+  padding: 15px 20px;
   text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+.hero-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.quienes-info {
+  padding: 4rem 2rem;
+  background-color: #181818;
+}
+.text-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.text-container h2 {
+  color: #9a5bff;
+  margin-top: 2rem;
+}
+.text-container ul {
+  list-style-type: "✅ ";
+  padding-left: 1.5rem;
+}
+
+.whatsapp-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.whatsapp-popup img.whatsapp-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.whatsapp-popup img.whatsapp-icon:hover {
+  transform: scale(1.1);
 }
