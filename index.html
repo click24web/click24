@@ -1,193 +1,288 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Click24 · Sitios en 24 horas</title>
-  <meta name="description" content="Click24 diseña landing pages y catálogos minimalistas en 24 horas para emprendedores y comercios de Argentina.">
+  <title>Click24 · Sitios Web en 24 Horas</title>
+  <meta name="description"
+    content="Diseño web moderno, rápido y profesional. Tu landing o catálogo online listo en 24 horas.">
+
+  <!-- Preconnect and Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="top-bar">
-    <div class="container">
-      <div class="brand">
-        <img src="logo.png" alt="Click24" class="brand-logo">
-        <div>
-          <strong>Click24</strong>
-          <span>Landing & catálogos en 24h</span>
-        </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#inicio" class="brand">
+        <img src="logo.png" alt="Click24 Logo" class="brand-logo">
+        <span class="brand-text">Click24</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="https://wa.me/5492257419523" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm">Empezar
+          Ahora</a>
       </div>
-      <a class="btn ghost" href="https://wa.me/5492257419523" target="_blank" rel="noreferrer">WhatsApp</a>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Web minimalista · 24h delivery</p>
-          <h1>Diseño ordenado que inspira confianza y convierte visitas en ventas.</h1>
-          <p class="lead">Armo tu landing o catálogo con estilo moderno, copy claro y llamadas a la acción directas para que tus clientes pidan info al instante.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="https://wa.me/5492257419523" target="_blank" rel="noreferrer">Pedir presupuesto</a>
-            <a class="btn secondary" href="#casos">Ver casos reales</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <h3>Qué recibís</h3>
-          <ul>
-            <li>Diseño minimalista adaptado a tu marca.</li>
-            <li>Hasta 4 secciones: historia, servicios, catálogo y contacto.</li>
-            <li>Botones a WhatsApp / Instagram y formulario opcional.</li>
-            <li>Hosting gratuito en GitHub Pages + soporte para cambios.</li>
-          </ul>
-          <div class="hero-card__stats">
-            <span>24h</span>
-            <span>100% responsive</span>
-            <span>SEO básico</span>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="glow-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-text reveal reveal-up">
+          <div class="badge">🚀 Tu web online en tiempo récord</div>
+          <h1>Diseño Web Minimalista que <span>Convierte Visitas en Ventas.</span></h1>
+          <p class="lead">Creamos la presencia online perfecta para tu negocio. Rápido, moderno y adaptado a celulares.
+            Haz que tus clientes confíen en ti desde el primer segundo.</p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary">Pedir Presupuesto</a>
+            <a href="#proceso" class="btn btn-outline">Cómo funciona</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="strip" id="servicio">
-      <div class="container strip-grid">
-        <article>
-          <h3>Proceso simple</h3>
-          <p>Me mandás la info por WhatsApp o audio. Yo ordeno, escribo y maquetо.</p>
-        </article>
-        <article>
-          <h3>Estética coherente</h3>
-          <p>Uso paleta oscuro + violetas y celestes suaves para transmitir modernidad y seguridad.</p>
-        </article>
-        <article>
-          <h3>Listo para vender</h3>
-          <p>Botones claros, copy directo y secciones divididas para que el cliente llegue rápido a comprar.</p>
-        </article>
+    <!-- Partners / Tags (Optional social proof) -->
+    <section class="strip section-padding">
+      <div class="container strip-grid reveal reveal-fade">
+        <div class="strip-item">
+          <h3>⚡ 24 Horas</h3>
+          <p>Entrega súper rápida sin perder calidad.</p>
+        </div>
+        <div class="strip-item">
+          <h3>📱 100% Móvil</h3>
+          <p>Diseñado para brillar en celulares y tablets.</p>
+        </div>
+        <div class="strip-item">
+          <h3>🎯 Listo para vender</h3>
+          <p>Llamados a la acción directos y claros.</p>
+        </div>
       </div>
     </section>
 
-    <section class="process" id="proceso">
+    <!-- Services Section -->
+    <section id="servicios" class="services section-padding">
       <div class="container">
-        <p class="eyebrow">Cómo trabajamos</p>
-        <h2>3 pasos para tener tu sitio publicado</h2>
-        <ol class="process-list">
-          <li>
-            <div>
-              <h3>Brief express</h3>
-              <p>Completás un formulario corto o me dictás todo por audio/WhatsApp.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Diseño y copy</h3>
-              <p>Creo la estructura, adapto colores/fotos y escribo textos claros.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Entrega + ajustes</h3>
-              <p>Revisás el link, corregimos detalles y lo sumo a tu Instagram/link-in-bio.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="cases" id="casos">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Casos reales</p>
-            <h2>Landings y catálogos ya online</h2>
-          </div>
-          <a class="btn tertiary" href="https://wa.me/5492257419523" target="_blank" rel="noreferrer">Quiero el mío</a>
+        <div class="section-header reveal reveal-up">
+          <p class="subtitle">Nuestros Paquetes</p>
+          <h2>Soluciones a tu medida</h2>
+          <p>Elige el plan ideal para llevar tu emprendimiento al siguiente nivel.</p>
         </div>
+
         <div class="cards-grid">
-          <article>
-            <div class="tag">Catálogo</div>
-            <h3>Parfum Roma</h3>
-            <p>Listado de perfumes árabes con CTA directo a WhatsApp.</p>
-            <a href="https://parfumroma.github.io/Parfum-Roma/" target="_blank" rel="noreferrer">Visitar →</a>
-          </article>
-          <article>
-            <div class="tag">Servicios</div>
-            <h3>Menor Barber Shop</h3>
-            <p>Landing para barbería con turnos, precios y testimonios.</p>
-            <a href="https://menorbarbershop.github.io/MenorBarberShop/" target="_blank" rel="noreferrer">Visitar →</a>
-          </article>
-          <article>
-            <div class="tag">Presentación</div>
-            <h3>Pampa Motorsport</h3>
-            <p>Sitio para equipo automovilístico con calendario y sponsors.</p>
-            <a href="https://pampamotorsport.github.io/PampaMotorsport/" target="_blank" rel="noreferrer">Visitar →</a>
-          </article>
+          <!-- Card 1 -->
+          <div class="card reveal reveal-up">
+            <div class="card-icon">
+              <!-- Inline SVG for icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Landing Express</h3>
+            <p>Perfecta para ofrecer servicios, captar leads o promocionar un evento único con secciones esenciales.</p>
+            <ul class="features">
+              <li>Hasta 4 secciones</li>
+              <li>Diseño responsivo</li>
+              <li>Botón de WhatsApp</li>
+            </ul>
+            <a href="https://wa.me/5492257419523" target="_blank" class="btn btn-outline btn-full">Solicitar →</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card card-featured reveal reveal-up" style="transition-delay: 100ms;">
+            <div class="featured-badge">Más Popular</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </div>
+            <h3>Catálogo Online</h3>
+            <p>Ideal para mostrar productos con precios, promos y vincular compras directamente por WhatsApp.</p>
+            <ul class="features">
+              <li>Listado de productos</li>
+              <li>Fácil de actualizar</li>
+              <li>Integración de redes</li>
+            </ul>
+            <a href="https://wa.me/5492257419523" target="_blank" class="btn btn-primary btn-full">Armar mi catálogo</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card reveal reveal-up" style="transition-delay: 200ms;">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3>Página Corporativa</h3>
+            <p>El sitio web definitivo para tu empresa, con múltiples páginas e información detallada de tu marca.</p>
+            <ul class="features">
+              <li>Secciones ilimitadas</li>
+              <li>Formularios avanzados</li>
+              <li>SEO completo</li>
+            </ul>
+            <a href="https://wa.me/5492257419523" target="_blank" class="btn btn-outline btn-full">Consultar →</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="plans" id="planes">
+    <!-- About Section -->
+    <section id="nosotros" class="about section-padding alt-bg">
+      <div class="container grid-2-col">
+        <div class="about-text reveal reveal-left">
+          <p class="subtitle">Sobre Nosotros</p>
+          <h2>Construyendo el futuro de tu negocio digital</h2>
+          <p>Somos un equipo apasionado por el diseño minimalista y la experiencia de usuario. Entendemos que en
+            internet el tiempo es oro, por lo que creamos sitios rápidos, limpios y al grano.</p>
+          <p>Nuestro proceso de 24 horas elimina las barreras tradicionales, permitiendo que emprendedores de toda
+            Argentina lancen sus ideas sin esperas interminables.</p>
+
+          <div class="stats-row">
+            <div class="stat">
+              <h4>100+</h4>
+              <span>Proyectos online</span>
+            </div>
+            <div class="stat">
+              <h4>24h</h4>
+              <span>Tiempo de entrega</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal reveal-right">
+          <div class="visual-box">
+            <!-- Placeholder for flyer/visual graphic -->
+            <img src="flyer.png" alt="Proceso Click24" class="rounded-img shadow-lg" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contacto" class="cta section-padding">
       <div class="container">
-        <h2>Paquetes flexibles según tu negocio</h2>
-        <div class="plan-grid">
-          <article>
-            <p class="tag">Landing express</p>
-            <h3>Perfecta para servicios</h3>
-            <ul>
-              <li>4 secciones (inicio, sobre mí, servicios, contacto).</li>
-              <li>Copywriting y diseño responsive.</li>
-              <li>Integración con redes y mapas.</li>
-              <li>Entrega editable en GitHub.</li>
-            </ul>
-            <a class="btn secondary" href="https://wa.me/5492257419523" target="_blank">Solicitar presupuesto</a>
-          </article>
-          <article>
-            <p class="tag">Catálogo online</p>
-            <h3>Ideal para productos</h3>
-            <ul>
-              <li>Listado de productos, precios y promos.</li>
-              <li>Botones de compra o consulta inmediata.</li>
-              <li>Actualizaciones incluidas.</li>
-              <li>Reportes o combos destacados.</li>
-            </ul>
-            <a class="btn secondary" href="https://wa.me/5492257419523" target="_blank">Armar mi catálogo</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="contacto">
-      <div class="container cta-card">
-        <div>
-          <p class="eyebrow">¿Listo para mostrarte como un pro?</p>
-          <h2>Escribime y en 24 horas publicamos tu sitio minimalista.</h2>
-          <p>Atiendo por WhatsApp todos los días. También puedo ayudarte con tu link-in-bio o plantillas para nuevas campañas.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn primary" href="https://wa.me/5492257419523" target="_blank" rel="noreferrer">Hablar por WhatsApp</a>
-          <span class="note">Próximamente: formulario y correo directo.</span>
+        <div class="cta-banner reveal reveal-scale">
+          <h2>¿Listo para mostrarte como un profesional?</h2>
+          <p>Hablemos de tu idea y empecemos a crear tu web hoy mismo. Cotizaciones sin cargo.</p>
+          <div class="cta-actions">
+            <a href="https://wa.me/5492257419523" target="_blank" rel="noreferrer" class="btn btn-primary btn-large">
+              Escribir por WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer">
-      <p>© 2026 Click24 · Landing y catálogos express para emprendedores en Argentina.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo-small">
+          <img src="logo.png" alt="Click24 Logo" width="32">
+        </div>
+        <p>© 2026 Click24. Todos los derechos reservados.</p>
+      </div>
       <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
         <a href="https://www.instagram.com/click24.web/" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="https://click24web.github.io/click24" target="_blank" rel="noreferrer">Portafolio</a>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/5492257419523" target="_blank" rel="noreferrer" class="floating-whatsapp" aria-label="WhatsApp">
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5492257419523" target="_blank" rel="noreferrer" class="floating-whatsapp"
+    aria-label="WhatsApp">
     <svg viewBox="0 0 32 32" role="img" aria-hidden="true">
-      <path d="M16 .7C7.5.7.6 7.6.6 16.1c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-1.9c2.2 1.2 4.6 1.9 7.1 1.9 8.5 0 15.4-6.9 15.4-15.4C31.1 7.6 24.3.7 16 .7zm0 27.7c-2.2 0-4.4-.6-6.3-1.7l-.5-.3-4.7 1.1 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.3 28.9 15.4 23.1 28.4 16 28.4zm7.2-9.6c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1.1 1.3-1.4 1.6-.3.3-.5.3-.9.1-.4-.2-1.7-.7-3.3-2.2-1.2-1.1-2-2.5-2.3-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7 0-.2-.9-2.2-1.3-3-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.3 2.5 3.8 6 5.3.8.4 1.5.6 2 .8.8.3 1.5.3 2.1.2.6-.1 2.3-.9 2.6-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z"></path>
+      <path
+        d="M16 .7C7.5.7.6 7.6.6 16.1c0 2.7.7 5.3 2 7.6L.7 31.3l7.9-1.9c2.2 1.2 4.6 1.9 7.1 1.9 8.5 0 15.4-6.9 15.4-15.4C31.1 7.6 24.3.7 16 .7zm0 27.7c-2.2 0-4.4-.6-6.3-1.7l-.5-.3-4.7 1.1 1.3-4.6-.3-.5c-1.3-2.1-2-4.5-2-7 0-7.1 5.8-12.9 12.9-12.9S28.9 8.3 28.9 15.4 23.1 28.4 16 28.4zm7.2-9.6c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1.1 1.3-1.4 1.6-.3.3-.5.3-.9.1-.4-.2-1.7-.7-3.3-2.2-1.2-1.1-2-2.5-2.3-2.9-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7 0-.2-.9-2.2-1.3-3-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.3 2.5 3.8 6 5.3.8.4 1.5.6 2 .8.8.3 1.5.3 2.1.2.6-.1 2.3-.9 2.6-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z">
+      </path>
     </svg>
   </a>
+
+  <!-- JS for Mobile Menu and Scroll Animations -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Scroll Animations (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Navbar Background on Scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
+
 </html>
